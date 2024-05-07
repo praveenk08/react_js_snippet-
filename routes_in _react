@@ -1,0 +1,19 @@
+
+## STEP - 1 
+install npm i react-router-dom
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+## STEP - 2
+
+<Router>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/about-us" element={<Aboutus />} />
+    <Route path="/contact-us" element={<Contactus />} />
+    <Route path="/login" element={<LoginRegister />} />
+    <Route path="/register" element={<LoginRegister />} />
+  </Routes>
+</Router>
+
+## STEP - 3 Replace a tag to Link tag
+<Link to={"/"}>Home</Link>
